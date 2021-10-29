@@ -6,7 +6,7 @@
       "string",
       "python",
       "plugin",
-      "modular",
+      "modular"
     ],
   "env": {
       "ENV": {
