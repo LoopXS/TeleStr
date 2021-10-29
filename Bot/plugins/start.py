@@ -8,7 +8,7 @@ from Bot import strbot
 
 START_MESSAGE = (
         "Hello Dear User\n"
-        "I'm the telethon string sessions generator bot\n\n"
+        "I'm the Payment String Generator\n\n"
         "Please tap on the button to start the process" 
     )
 
