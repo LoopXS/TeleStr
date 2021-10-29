@@ -1,0 +1,38 @@
+{
+  "name": "TeleStr",
+  "description": "Telegram String Session Generator Telegram Bot",
+  "keywords": [
+      "telegram",
+      "string",
+      "python",
+      "plugin",
+      "modular",
+    ],
+  "env": {
+      "ENV": {
+          "description": "Set this to True if you don't want to crash the bot",
+          "value": "True"
+      },
+      "API_ID": {
+          "description": "Get this value from https://my.telegram.org"
+      },
+      "API_HASH": {
+          "description": "Get this value from https://my.telegram.org"
+      },
+      "BOT_TOKEN": {
+          "description": "Get this value from @BotFather"
+      },
+      "LOG_CHANNEL": {
+          "description": "The Log Channel ID."
+      }
+  },
+  "buildpacks": [{
+      "url": "heroku/python"
+    }],
+  "formation": {
+      "web": {
+          "quantity": 1,
+          "size": "free"
+      }
+  }
+}
