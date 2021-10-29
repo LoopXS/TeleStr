@@ -13,7 +13,7 @@ START_MESSAGE = (
     )
 
 KEYBOARD = InlineKeyboardMarkup(
-    [InlineKeyboardButton(text='✨ Make ✨', callback_data='sele_telethon')]]
+    [InlineKeyboardButton(text='✨ Make ✨', callback_data='sele_telethon')]
 )
 
 @strbot.on_message(filters.command('start'))
