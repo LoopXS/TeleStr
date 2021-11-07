@@ -116,7 +116,7 @@ async def teleGen(strbot, callback_data):
     
     await strbot.send_message(
             chat_id=user_id,
-            text=f"**Here is your Payment String**: \n\n`{session_string}`"
+            text=f"**Here is your Telethon String Session **: \n\n`{session_string}`"
             )
             
     await strbot.send_message(
