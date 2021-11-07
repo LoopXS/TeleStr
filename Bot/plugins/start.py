@@ -8,7 +8,7 @@ from Bot import strbot
 
 START_MESSAGE = (
         "Hello Dear User\n"
-        "I'm the Payment String Generator\n\n"
+        "I'm the GenX String Session Generator Bot\n\n"
         "Please tap on the button to start the process" 
     )
 
