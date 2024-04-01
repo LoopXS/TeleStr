@@ -27,7 +27,7 @@ async def teleGen(strbot, callback_data):
     
     await strbot.delete_messages(
         user_id,
-        callback_data.message.message_id
+        callback_data.message.id
     )
 
     API_ID = await strbot.ask(
