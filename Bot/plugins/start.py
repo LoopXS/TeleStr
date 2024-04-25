@@ -7,7 +7,7 @@ from pyrogram.types import (
 from Bot import strbot
 
 START_MESSAGE = (
-        "Hey Dear User\n"
+        "Hey {mention}\n"
         "I'm the String Session Generator Bot\n"
         "Please tap on the button blow to start the process" 
     )
@@ -16,8 +16,10 @@ KEYBOARD = InlineKeyboardMarkup(
     [[InlineKeyboardButton(text='✨ Generate String Session ✨', callback_data='sele_telethon')]]
 )
 
-@strbot.on_message(filters.command('generate'))
+@strbot.on_message(filters.command('session'))
 async def start(strbot, message):
+    user = await bot.get_me()
+    mention = user.mention
     await message.reply(
         text=START_MESSAGE,
         reply_markup=KEYBOARD,
