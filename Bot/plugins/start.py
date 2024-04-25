@@ -18,7 +18,7 @@ KEYBOARD = InlineKeyboardMarkup(
 
 @strbot.on_message(filters.command('session'))
 async def start(strbot, message):
-    user = await bot.get_me()
+    user = await strbot.get_me()
     mention = user.mention
     await message.reply(
         text=START_MESSAGE,
