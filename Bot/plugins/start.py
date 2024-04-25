@@ -8,15 +8,15 @@ from Bot import strbot
 
 START_MESSAGE = (
         "Hello Dear User\n"
-        "I'm the GenX String Session Generator Bot\n\n"
-        "Please tap on the button to start the process" 
+        "I'm the String Session Generator Bot\n\n"
+        "Please tap on the button blow to start the process" 
     )
 
 KEYBOARD = InlineKeyboardMarkup(
-    [[InlineKeyboardButton(text='✨ Make ✨', callback_data='sele_telethon')]]
+    [[InlineKeyboardButton(text='✨ Generate String Session ✨', callback_data='sele_telethon')]]
 )
 
-@strbot.on_message(filters.command('start'))
+@strbot.on_message(filters.command('generate'))
 async def start(strbot, message):
     await message.reply(
         text=START_MESSAGE,
