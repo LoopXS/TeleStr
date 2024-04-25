@@ -7,8 +7,8 @@ from pyrogram.types import (
 from Bot import strbot
 
 START_MESSAGE = (
-        "Hello Dear User\n"
-        "I'm the String Session Generator Bot\n\n"
+        "Hey Dear User\n"
+        "I'm the String Session Generator Bot\n"
         "Please tap on the button blow to start the process" 
     )
 
