@@ -9,7 +9,7 @@ BOT_TOKEN = Var.BOT_TOKEN
 LOG_CHANNEL = Var.LOG_CHANNEL
 
 strbot = Client(
-    'botSession',
+    'DarkPentester',
     api_id=API_ID,
     api_hash=API_HASH,
     bot_token=BOT_TOKEN,
